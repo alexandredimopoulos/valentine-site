@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card" id="card">
+        <p class="badge">Question très sérieuse</p>
+
+        <h1 id="title">Tu veux être ma Valentine ?</h1>
+        <p id="subtitle">Promis, je fais des efforts.</p>
+
+        <div class="buttons" id="buttons">
+          <button id="yesBtn" class="btn yes" type="button">Oui</button>
+          <button id="noBtn" class="btn no" type="button">Non, je préfère Harry</button>
+        </div>
+
+        <div class="result hidden" id="result">
+          <h2>Yesssss</h2>
+          <p>Regarde comme on est trop heureux.</p>
+
+          <div class="photoFrame" aria-label="Photo de nous deux">
+            <img src="assets/us.jpg" alt="Nous deux" id="photo" />
+            <div class="hearts" aria-hidden="true">
+              <span>💚</span><span>💚</span><span>💚</span><span>💚</span><span>💚</span>
+            </div>
+          </div>
+
+          <button id="resetBtn" class="btn reset" type="button">Recommencer</button>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <small>Astuce, remplace <code>assets/us.jpg</code> par votre photo.</small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
