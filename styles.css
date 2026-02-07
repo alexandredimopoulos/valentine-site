@@ -203,3 +203,7 @@ code{
   15%{ opacity: 1; }
   100%{ transform: translateY(-120px) scale(1.15); opacity: 0; }
 }
+
+.yes{
+  font-size: clamp(18px, 4vw, 28px);
+}

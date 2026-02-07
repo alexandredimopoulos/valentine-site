@@ -14,16 +14,16 @@ const pityPhrases = [
   "Stp…",
   "Tu vas pas regretter",
   "Allez, dis oui",
-  "J’ai déjà imaginé la photo",
-  "Je te laisse choisir le resto",
-  "Je fais la vaisselle, promis",
-  "S’il te plaît, je suis sérieux",
-  "Dernière chance…",
-  "Ok mais je suis triste là",
-  "Je mets une playlist trop bien",
-  "Je peux pas faire plus mignon",
-  "Dis oui, juste une fois"
+  "Je te ferai des plats de chantilly",
+  "Je t’offrirai des tulipes… jaunes",
+  "Clique sur oui là tu soules frrrrrr",
+  "Je fais semblant de rien mais j’insiste",
+  "Regarde la taille du bouton Oui",
+  "Ok là c’est gênant si tu dis encore non",
+  "C’est clairement un signe",
+  "Bon. Clique. Sur. Oui."
 ];
+
 
 let noCount = 0;
 let yesScale = 1;
@@ -40,10 +40,18 @@ function nextNoText(){
 }
 
 function growYes(){
-  const bump = 0.18;
-  const cap = 2.8;
+  const bump = 0.45;
+  const cap = 8;
   setYesScale(Math.min(yesScale + bump, cap));
+
+  if (yesScale > 4) {
+    yesBtn.style.position = "fixed";
+    yesBtn.style.inset = "12px";
+    yesBtn.style.zIndex = "999";
+    yesBtn.style.borderRadius = "22px";
+  }
 }
+
 
 function onNo(){
   nextNoText();
