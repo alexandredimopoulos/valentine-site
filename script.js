@@ -63,8 +63,8 @@ function onNo(){
 }
 
 function onYes(){
-  title.textContent = "Ok, c’est officiel.";
-  subtitle.textContent = "Je suis trop content.";
+  title.textContent = "OULOULOULOULOULOULOULOULOU.";
+  subtitle.textContent = "TEMA LA FRAPPE QUE JAI POUR LE DATE C TROPPP";
 
   buttons.classList.add("hidden");
   result.classList.remove("hidden");
